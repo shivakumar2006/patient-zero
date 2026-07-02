@@ -1,0 +1,8 @@
+fastapi==0.116.2
+uvicorn[standard]==0.34.0
+# Not pinning cognee's version - check pypi.org/project/cognee for the current
+# release before install, since this hackathon track targets a recent Cognee Cloud SDK.
+cognee==1.2.2
+anthropic==0.40.0
+python-dotenv==1.0.1
+pydantic==2.10.5

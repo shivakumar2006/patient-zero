@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: theme("colors.ink");
+  background-color: theme("colors.bg");
+  background-image:
+    radial-gradient(ellipse at top, rgba(255, 255, 255, 0.03), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.012) 0px, transparent 1px, transparent 2px);
+}
+
+.stamp-text {
+  font-family: "Special Elite", monospace;
+  letter-spacing: 0.04em;
+}
+
+.redaction-bar {
+  background: theme("colors.redaction");
+  display: inline-block;
+  height: 0.85em;
+  vertical-align: -0.1em;
+  border-radius: 1px;
+}
+
+/* Pin used at the top of manila / claim cards, like a real corkboard pin */
+.pin::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #e0594a, #7a2418);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
