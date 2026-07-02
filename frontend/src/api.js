@@ -16,8 +16,8 @@ async function get(path) {
   return res.json();
 }
 
-export const traceClaim = (claim_text) => post("/trace-claim", { claim_text });
-export const testYourOwn = (source_text, claim_text) =>
-  post("/test-your-own", { source_text, claim_text });
-export const getTree = () => get("/graph/tree");
-export const getTimeline = () => get("/graph/timeline");
+export const traceClaim    = (claim_text) => post("/trace-claim", { claim_text });
+export const testYourOwn   = (source_text, claim_text) => post("/test-your-own", { source_text, claim_text });
+export const getTree       = () => get("/graph/tree");
+export const getTimeline   = () => get("/graph/timeline");
+export const getGraphStats = () => get("/graph/stats");
