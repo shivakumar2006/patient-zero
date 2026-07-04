@@ -42,8 +42,8 @@ Respond with ONLY a JSON object, no other text, no markdown fences:
 async def compare(source_text: str, claim_text: str) -> dict:
     """Return a structured drift assessment for one (source, claim) pair."""
     message = _client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=300,
+        model="claude-haiku-4-5-20251001",
+        max_tokens=150,
         messages=[
             {
                 "role": "user",
