@@ -263,12 +263,12 @@ The hangover analogy holds perfectly: society wakes up believing something, with
 
 ---
 
-## Live Links
+## 🌐 Live Demo
 
-- **Frontend:** `[your-vercel-url]`
-- **Backend:** `[your-render-url]`
-- **Cognee Mindmap:** 353 nodes, 783 edges — `patient_zero_main` dataset
+- **Frontend:** https://patient-zerohangover.netlify.app/
+- **Backend API:** https://patient-zero.onrender.com/
+- **Cognee Dataset:** `patient_zero_main`
 
----
+> **Important:** This project uses Render's free hosting tier. If the backend has been inactive, the initial request may take approximately **30–60 seconds** to wake up. Subsequent requests are served normally.
 
 _Primary sources curated from the May 2026 PURSUE declassification release. Claims shown are illustrative examples based on documented public reaction patterns. All four Cognee lifecycle operations — remember, recall, improve, forget — are meaningfully used throughout the system._
