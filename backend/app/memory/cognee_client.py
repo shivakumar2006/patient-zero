@@ -22,6 +22,12 @@ def configure():
         "llm_api_key": os.environ["ANTHROPIC_API_KEY"],
     })
 
+    cognee.config.set_embedding_config({
+        "embedding_provider": "fastembed",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+        "embedding_dimensions": 384,
+    })
+
 
 def _extract_text(recall_result) -> str:
     """
